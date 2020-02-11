@@ -1,0 +1,115 @@
+{% extends 'base.html' %} {% block content %}
+<header style="background:#ffffff; color:#2c3e50;">
+    <div class="container" id="maincontent" tabindex="-1">
+        <div class="row">
+            <div class="container" style="padding: 10px;">
+                <form action="" method="post" role="">
+                    <fieldset>
+                        <!-- Pour X  médicaments ce code doit apparaitre X fois-->
+                        <div class="row div_select">
+                            <div class="longcolumn">
+                                <div class="rowrapper">
+                                    <h2 id="labels">-Nom du médicament-</h2>
+                                    <div class="div_select_forme">
+                                        <select name="basic" id="ex-basic" class="select_form_med">
+                                            <option value="" disabled hidden>Forme du médicament</option>
+                                            <option value="1">application(s)</option>
+                                            <option value="2">capsule(s)</option>
+                                            <option value="3">comprimé(s)</option>
+                                            <option value="4">dose(s)</option>
+                                            <option value="5">gélule(s)</option>
+                                            <option value="6">gomme(s)</option>
+                                            <option value="7">goutte(s)</option>
+                                            <option value="8">ovule(s)</option>
+                                            <option value="9">pastille(s)</option>
+                                            <option value="10">pulverisation(s)</option>
+                                            <option value="11">shampooing(s)</option>
+                                            <option value="11">suppositoire(s)</option>
+                                        </select>
+                                    </div>
+                                    <div class="row div_select">
+                                        <select name="basic" id="ex-basic" class="small_select_poso">
+                                            <option value="" disabled hidden>nombre d'utilisations</option>
+                                            <option value="1">1</option>
+                                            <option value="1">2</option>
+                                            <option value="2">3</option>
+                                            <option value="3">4</option>
+                                            <option value="4">5</option>
+                                            <option value="5">6</option>
+                                            <option value="6">7</option>
+                                            <option value="7">8</option>
+                                            <option value="8">9</option>
+                                            <option value="9">10</option>
+                                        </select>
+                                        <p>-forme médicament-</p>
+                                        <select name="basic" id="ex-basic" class="small_select_poso">
+                                            <option value="" disabled hidden>nombre de fois d'application</option>
+                                            <option value="1">1</option>
+                                            <option value="1">2</option>
+                                            <option value="2">3</option>
+                                            <option value="3">4</option>
+                                            <option value="4">5</option>
+                                            <option value="5">6</option>
+                                            <option value="6">7</option>
+                                            <option value="7">8</option>
+                                            <option value="8">9</option>
+                                            <option value="9">10</option>
+                                        </select>
+                                        <p>fois par jour pendant </p>
+                                        <select name="basic" id="ex-basic" class="select_poso">
+                                            <option value="" disabled hidden>nombre de jour</option>
+                                            <option value="1">1 jour</option>
+                                            <option value="1">2 jours</option>
+                                            <option value="2">3 jours</option>
+                                            <option value="3">4 jours</option>
+                                            <option value="4">5 jours</option>
+                                            <option value="5">6 jours</option>
+                                            <option value="6">7 jours</option>
+                                            <option value="7">8 jours</option>
+                                            <option value="8">9 jours</option>
+                                            <option value="9">10 jours</option>
+                                            <option value="9">11 jours</option>
+                                            <option value="9">12 jours</option>
+                                            <option value="9">13 jours</option>
+                                            <option value="9">14 jours</option>
+                                        </select>
+                                        <select name="basic" id="ex-basic" class="select_poso">
+                                            <option value="" disabled hidden>nombre de semaine</option>
+                                            <option value="4">0 semaine</option>
+                                            <option value="4">1 semaine</option>
+                                            <option value="1">2 semaines</option>
+                                            <option value="2">3 semaines</option>
+                                            <option value="3">4 semaines</option>    
+                                        </select>
+                                        <select name="basic" id="ex-basic" class="select_poso">
+                                            <option value="" disabled hidden>nombre de mois</option>
+                                            <option value="9">0 mois</option>
+                                            <option value="9">1 mois</option>
+                                            <option value="1">2 mois</option>
+                                            <option value="2">3 mois</option>
+                                            <option value="3">4 mois</option>
+                                            <option value="4">5 mois</option>
+                                            <option value="5">6 mois</option>
+                                            <option value="6">7 mois</option>
+                                            <option value="7">8 mois</option>
+                                            <option value="8">9 mois</option>
+                                            <option value="9">10 mois</option>
+                                            <option value="9">11 mois</option>
+                                            <option value="9">12 mois</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row valider_pos">
+                            <div class="longcolumn text-center">
+                            <button type="submit" class='button'>valider</button>
+                            </div>
+                        </div>  
+                    </fieldset>
+                </form>          
+            </div>
+        </div>
+    </div>
+</header>
+{% endblock%}

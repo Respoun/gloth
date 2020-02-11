@@ -1,0 +1,85 @@
+{% extends 'base.html' %} {% block content %}
+<section style="background:#ffffff; color:#2c3e50;">
+    <div class="container" id="maincontent" tabindex="-1">
+        <div class="row">
+            <div class="container" style="padding: 10px;">
+                <form action="" method="post" role="">
+                    <fieldset>
+                        <div class="row">
+                            <div class="longcolumn">
+                                <div class="rowrapper">
+                                    <h4 id="labels">Classes</h4>
+                                    <select name="basic" id="ex-basic">
+                                        <option value="" disabled hidden>Select value</option>
+                                        <option value="1">classe1</option>
+                                        <option value="2">classe2</option>
+                                        <option value="3">classe3</option>
+                                        <option value="4">classe4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="longcolumn">
+                                <div class="rowrapper">
+                                    <h4 id="labels">Molécules</h4>
+                                    <select name="basic" id="ex-basic">
+                                        <option value="" disabled hidden>Select value</option>
+                                        <option value="1">molécule1</option>
+                                        <option value="2">molécule2</option>
+                                        <option value="3">molécule3</option>
+                                        <option value="4">molécule4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="longcolumn">
+                                <div class="rowrapper">
+                                    <h4 id="labels">Médicaments</h4>
+                                    <select name="basic" id="ex-basic">
+                                        <option value="" disabled hidden>Select value</option>
+                                        <option value="1">médicament1</option>
+                                        <option value="2">médicament2</option>
+                                        <option value="3">médicament3</option>
+                                        <option value="4">médicament4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="longcolumn text-center">
+                              <button type="submit" class='button event_add'>Ajouter</button>
+                            </div>
+                        </div>
+                        <section>
+                            <ul id="li_med">
+                                <li class="med1">medicament1 <i class="fa fa-trash" aria-hidden="true" onclick="suppIcone()"></i></li>
+                                <li class="med2">medicament3 <i class="fa fa-trash" aria-hidden="true"></i></li>
+                            </ul>
+                        </section>
+                        <div class="row">
+                        <div class="longcolumn text-center">
+                          <button type="submit" class='button'>valider</button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                  <br>
+              </div>
+        </div>
+    </div>
+</section>
+<script>
+
+    document.querySelector("event_add").addEventListener("click");
+    
+    function add_med(){
+        document.querySelector("#li_med").document.createElement(li).text("medicament");
+    }
+    function suppIcone(){
+        
+        $("i").closest("li").remove();
+    }
+</script>
+{% endblock%}

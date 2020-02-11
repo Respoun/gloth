@@ -1,0 +1,40 @@
+{% extends 'base.html' %} {% block content %}
+<header style="background:#ffffff; color:#2c3e50;">
+    <div class="container" id="maincontent" tabindex="-1">
+        <p class="welcome">Bonjour {{name}}!</p>
+        <div class="row">
+            <div class="container" style="padding: 10px;">
+                <form action="{{url_for("medic", _external=True)}}" method="post" role=patient_form>
+                    <fieldset>
+                      <div class="row">
+                        {{ patient_form.hidden_tag() }}
+                        </div>
+                      <div class="row">
+                        <div class="longcolumn">
+                          <div class="rowrapper">
+                            <h4 id="labels">{{ patient_form.pathology.label }}</h4>
+                            {{ patient_form.pathology() }}
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="longcolumn">
+                          <div class="rowrapper">
+                            <h4 id="labels">{{ patient_form.user.label }}</h4>
+                            {{ patient_form.user() }}
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="longcolumn text-center">
+                          <button type="submit" class='button'">{{ patient_form.submit }}</button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                  <br>
+              </div>
+        </div>
+    </div>
+</header>
+{% endblock%}
