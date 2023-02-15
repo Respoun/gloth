@@ -7,4 +7,4 @@ WTForms-Dynamic-Fields==0.1a3
 pytz==2018.9
 psycopg2==2.7.7
 psycopg2-binary==2.8.4
-werkzeug==0.16.0
+werkzeug==2.2.3
